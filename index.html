@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-editor</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2 class="text-center mt-5">TEXT EDITOR</h2>
+        <div class="format-btn text-center mt-4">
+            <button type="button" class="btn btn-secondary text-decor" onclick="textThrough(this)">S</button>
+            <button type="button" class="btn btn-secondary text-decor" onclick="textUnder(this)">U</button>
+            <button type="button" class="btn btn-secondary coursive" onclick="textCoursive(this)"><i>italic</i></button>
+            <button type="button" class="btn btn-secondary bold" onclick="textBold(this)">BOLD</button>
+            <button type="button" class="btn btn-secondary align" onclick="textLeft(this)">Left</button>
+            <button type="button" class="btn btn-secondary align" onclick="textCenter(this)">Center</button>
+            <button type="button" class="btn btn-secondary align" onclick="textRight(this)">Right</button>
+            <button type="button" class="btn btn-primary color" onclick="textBlue(this)">Blue</button>
+            <button type="button" class="btn btn-success color" onclick="textGreen(this)">Green</button>
+            <button type="button" class="btn btn-danger color" onclick="textRed(this)">Red</button>
+            <button type="button" class="btn btn-warning color" onclick="textYellow(this)">Yellow</button>
+            
+        </div>
+    <div class="row mt-5">
+        <div class="col-6">
+            <div class="form-group">
+                <label for="input">
+                    ENTER TEXT</label>
+                <textarea class="form-control" id="input" rows="3"></textarea>
+              </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label for="input">RESULT</label>
+                <textarea class="form-control" id="output" rows="3"></textarea>
+              </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
